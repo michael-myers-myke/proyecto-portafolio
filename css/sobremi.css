@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(126,119,119);
+    background: linear-gradient(90deg, rgba(126,119,119,1) 26%, rgba(89,96,96,1) 53%, rgba(46,57,57,1) 86%);
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#encabezado{
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#encabezado h1,h2{
+    text-align: center;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#encabezado nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li{
+    display: inline;
+    margin: 2em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+li a:hover{
+    background: #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+li a:active{
+    background:rgb(27, 27, 135);
+}
+#contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#caja, #caja1, #caja2{
+    margin-top: 60px;
+    background-color: #ccc;
+    padding: 40px;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: 20px 38px 53px #000;
+    animation: animate 10s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: inline;
+    margin: 1em;
+}
+.footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    box-shadow: 0 8px 20px rgba(211, 208, 208, 0.7);
+  }
+  .menu-hamburguesa {
+    display: none; /* Ocultar el menú hamburguesa por defecto */
+}
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Ocultar el icono del menú hamburguesa por defecto */
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff; /* Cambia esto según el color que prefieras */
+}
+
+/* Mostrar el menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: #000; /* Color de fondo del menú */
+        top: 50px; /* Ajusta según sea necesario */
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+
+    .caja {
+        position: absolute;
+        background-color: #ccc;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .caja1 {
+        position: absolute;
+        background-color: #ccc;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .caja2 {
+        position: absolute;
+        background-color: #ccc;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .caja {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caja1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caja2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .caja {
+        width: 90%;
+    }
+    .caja1 {
+        width: 90%;
+    }
+    .caja2 {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+}
